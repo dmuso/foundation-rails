@@ -243,7 +243,7 @@
     show : function (el, css) {
       // is modal
       if (css) {
-        // var settings = el.data('reveal-init');
+        var settings = el.data('reveal-init');
         // if (el.parent('body').length === 0) {
         //   var placeholder = el.wrap('<div style="display: none;" />').parent(),
         //       rootElement = this.settings.rootElement || 'body';;
