@@ -243,17 +243,17 @@
     show : function (el, css) {
       // is modal
       if (css) {
-        var settings = el.data('reveal-init');
-        if (el.parent('body').length === 0) {
-          var placeholder = el.wrap('<div style="display: none;" />').parent(),
-              rootElement = this.settings.rootElement || 'body';;
-          el.on('closed.fndtn.reveal.wrapped', function() {
-            el.detach().appendTo(placeholder);
-            el.unwrap().unbind('closed.fndtn.reveal.wrapped');
-          });
+        // var settings = el.data('reveal-init');
+        // if (el.parent('body').length === 0) {
+        //   var placeholder = el.wrap('<div style="display: none;" />').parent(),
+        //       rootElement = this.settings.rootElement || 'body';;
+        //   el.on('closed.fndtn.reveal.wrapped', function() {
+        //     el.detach().appendTo(placeholder);
+        //     el.unwrap().unbind('closed.fndtn.reveal.wrapped');
+        //   });
 
-          el.detach().appendTo(rootElement);
-        }
+        //   el.detach().appendTo(rootElement);
+        // }
 
         if (/pop/i.test(settings.animation)) {
           css.top = $(window).scrollTop() - el.data('offset') + 'px';
